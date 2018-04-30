@@ -186,3 +186,22 @@ case '4': clrscr();
 isEmpty();
 tampil();
 break;
+case '5': clrscr();
+isEmpty();
+hapusDepan();
+break;
+case '6': clrscr();
+isEmpty();
+hapusTengah();
+break;
+case '7': clrscr();
+isEmpty();
+hapusBelakang();
+break;
+case '8':clrscr();
+clear();
+}
+getch();
+}while(pil!='9');
+return 0;
+}
