@@ -166,4 +166,19 @@ cout<<"7.Delete Belakang"<<endl;
 cout<<"8.Hapus Semua"<<endl;
 cout<<"9.Exit"<<endl;
 cout<<"Masukan Pilihan Anda :";pil=getch();
-
+switch(pil){
+case '1' : clrscr();
+cout<<"Masukan data :";cin>>n;
+isEmpty();
+insertDepan(n);
+break;
+case '2': clrscr();
+cout<<"Masukan data :";cin>>n;
+isEmpty();
+tambahBelakang(n);
+break;
+case '3': clrscr();
+cout<<"Masukan data :";cin>>n;
+isEmpty();
+tambahBelakang(n);
+break;
