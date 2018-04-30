@@ -138,3 +138,32 @@ delete hapus;
 head = NULL;
 tail = NULL;
 }
+void tampil(){  
+TNode *bantu;  
+bantu=head;  
+if(isEmpty()==0){ 
+while(bantu!=NULL){ 
+cout<<bantu->data<<endl; 
+bantu=bantu->next;  
+}
+}
+else
+cout<<"Masih Kosong"<<endl;
+}
+int main(){  
+int pil;
+int clrscr();
+do{
+clrscr();
+int n;
+cout<<"1.Insert Depan"<<endl;
+cout<<"2.Insert Tengah"<<endl;
+cout<<"3.Insert Belakang"<<endl;
+cout<<"4.Display"<<endl;
+cout<<"5.Delete Depan"<<endl;
+cout<<"6.Delete Tengah"<<endl;
+cout<<"7.Delete Belakang"<<endl;
+cout<<"8.Hapus Semua"<<endl;
+cout<<"9.Exit"<<endl;
+cout<<"Masukan Pilihan Anda :";pil=getch();
+
