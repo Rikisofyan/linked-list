@@ -3,18 +3,18 @@
 #include <stdio.h>
 using namespace std;
 
-struct TNode { //Deklarasi Linked List
-int data;   //data bertipe integer
+struct TNode {
+int data;  
 TNode *next;
 };  //penutup deklarasi
-TNode *head, *tail;  //gunakan head sebagai pointer utama dari linked list
+TNode *head, *tail; 
 
-void init(){  // inisialisasi awal linked list
+void init(){  
 head = NULL;
-tail = NULL;  //Untuk pertama kali, head bernilai NULL
+tail = NULL; 
 }
 
-int isEmpty(){  //Fungsi mengetahui apakah Linked list kosong atau ada isinya
+int isEmpty(){  
 if(tail == NULL) return 1;
 else return 0;
 }
@@ -181,4 +181,8 @@ case '3': clrscr();
 cout<<"input data :";cin>>n;
 isEmpty();
 tambahBelakang(n);
+break;
+case '4': clrscr();
+isEmpty();
+tampil();
 break;
