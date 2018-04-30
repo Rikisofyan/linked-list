@@ -18,7 +18,7 @@ int isEmpty(){  //Fungsi mengetahui apakah Linked list kosong atau ada isinya
 if(tail == NULL) return 1;
 else return 0;
 }
-void insertDepan(int databaru){
+void inputDepan(int databaru){
 TNode *baru;
 baru = new TNode;
 baru->data = databaru;
@@ -156,13 +156,13 @@ int clrscr();
 do{
 clrscr();
 int n;
-cout<<"1.Insert Depan"<<endl;
-cout<<"2.Insert Tengah"<<endl;
-cout<<"3.Insert Belakang"<<endl;
+cout<<"1.input Depan"<<endl;
+cout<<"2.input Tengah"<<endl;
+cout<<"3.input Belakang"<<endl;
 cout<<"4.Display"<<endl;
-cout<<"5.Delete Depan"<<endl;
-cout<<"6.Delete Tengah"<<endl;
-cout<<"7.Delete Belakang"<<endl;
+cout<<"5.Hapus Depan"<<endl;
+cout<<"6.Hapus Tengah"<<endl;
+cout<<"7.Hapus Belakang"<<endl;
 cout<<"8.Hapus Semua"<<endl;
 cout<<"9.Exit"<<endl;
 cout<<"Masukan Pilihan Anda :";pil=getch();
@@ -170,15 +170,15 @@ switch(pil){
 case '1' : clrscr();
 cout<<"Masukan data :";cin>>n;
 isEmpty();
-insertDepan(n);
+inputDepan(n);
 break;
 case '2': clrscr();
-cout<<"Masukan data :";cin>>n;
+cout<<"input data :";cin>>n;
 isEmpty();
 tambahBelakang(n);
 break;
 case '3': clrscr();
-cout<<"Masukan data :";cin>>n;
+cout<<"input data :";cin>>n;
 isEmpty();
 tambahBelakang(n);
 break;
