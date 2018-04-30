@@ -69,3 +69,72 @@ tail=baru;
 }
 printf("Data masuk\n");
 }
+void hapusDepan(){
+TNode *hapus;
+int d;
+if (isEmpty()==0){
+if(head!=tail){
+hapus = head;
+d = hapus->data;
+head = head->next;
+delete hapus;
+} else {
+d = tail->data;
+head=tail=NULL;
+}
+printf("%d terhapus\n",d);
+} else printf("Masih kosong\n");
+}
+
+void hapusTengah(){
+TNode *bantu,*hapus;
+int d;
+if (isEmpty()==0){
+if(head!=tail){
+hapus = bantu;
+d = hapus->data;
+head = head->next;
+delete hapus;
+} else {
+d = tail->data;
+head=tail=NULL;
+}
+printf("%d terhapus\n",d);
+} else printf("Masih kosong\n");
+}
+
+void hapusBelakang(){
+TNode *bantu,*hapus;
+int d;
+if (isEmpty()==0){
+bantu = head;
+if(head!=tail){
+while(bantu->next!=tail){
+bantu = bantu->next;
+}
+hapus = tail;
+tail=bantu;
+d = hapus->data;
+delete hapus;
+tail->next = NULL;
+}else {
+d = tail->data;
+head=tail=NULL;
+}
+cout<<d<<" terhapus\n";
+} else cout<<"Masih kosong\n";
+}
+
+void clear()
+{
+TNode *bantu,*hapus;
+bantu = head;
+while(bantu!=NULL)
+{
+hapus = bantu;
+bantu = bantu->next;
+delete hapus;
+}
+head = NULL;
+tail = NULL;
+}
